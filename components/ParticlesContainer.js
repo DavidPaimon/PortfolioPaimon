@@ -11,7 +11,8 @@ const ParticlesContainer = () => {
   const particlesLoaded = useCallBack(async () => {}, []);
 
   return (
-  <Particles
+  <Particles 
+    className='w-full h-full absolute translate-z-0'
     id='tsparticles' 
     init={particlesInit} 
     loaded={particlesLoaded} 
@@ -19,8 +20,31 @@ const ParticlesContainer = () => {
     fullScreen: {enable: false},
     background: {
       color: {
-        value: ''
+        value: '',
       },
+    },
+    fpsLimit: 120,
+    interactivity: {
+      events: {
+        onClick: {
+          enable: false,
+          mode: 'push',
+        },
+        onHover: {
+          enable: true,
+          mode: 'repulse',
+        },
+        resize: true,
+      },
+      modes: {
+        push: {
+          quantity: 90
+        },
+        repulse: {
+          distance: 200,
+          duration: 0.4,
+        }
+      }
     },
   }} 
   />
