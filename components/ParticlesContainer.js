@@ -46,6 +46,30 @@ const ParticlesContainer = () => {
         }
       }
     },
+    particles: {
+      color: {
+        value: '#e68e2e',
+      },
+      Links: {
+        color: '#f5d393',
+        distance: 150,
+        enable: true,
+        opacity: 0.5,
+        width: 1
+      },
+      collisions: {
+        enable: true,
+      },
+      move: {
+        directions: 'none',
+        enable: true,
+        outModes: {
+          default: 'bounce'
+        },
+        random: false,
+        speed: 1,
+      }
+    },
   }} 
   />
  );
