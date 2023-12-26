@@ -1,6 +1,6 @@
 import {Particles} from 'react-tsparticles';
 import {loadFull} from 'tsparticles';
-import React, {useCallback} from 'react';
+import React, { useCallback } from 'react';
 
 const ParticlesContainer = () => {
   // init
@@ -50,7 +50,7 @@ const ParticlesContainer = () => {
       color: {
         value: '#e68e2e',
       },
-      Links: {
+      links: {
         color: '#f5d393',
         distance: 150,
         enable: true,

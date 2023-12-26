@@ -35,11 +35,12 @@ const Home = () => {
          initial='hidden'
          animate='show'
          exit='hidden'
-         className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
-         >
-          David
-          Felipe
-          Florido Jiménez
+         className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
+          <p style={{ color: '#FFC0CB' }}>
+            David
+            Felipe
+            Florido Jiménez
+          </p>
         </motion.p>
         {/* btn*/}
         <div className="flex justify-center xl:hidden relative">
@@ -61,7 +62,7 @@ const Home = () => {
       {/* bg img */}
       <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
        {/*particles*/}
-       <ParticlesContainer />
+       {/* <ParticlesContainer /> */}
        {/* avatar img */}
        <motion.div 
         variants={fadeIn('up', 0.5)}
