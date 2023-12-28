@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 // components
-import Socials from '../components/Socials';
+import Socials from '../components/Socials'
 
 const Header = () => {
   return (
@@ -23,7 +23,7 @@ const Header = () => {
           />
         </Link>
         {/* socials */}
-        <Socials />
+        {/* <Socials /> */}
       </div>
     </div>
   </header>
