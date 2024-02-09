@@ -4,7 +4,7 @@ import Image from 'next/image';
 // next link
 import Link from 'next/link';
 
-// components
+// component
 import Socials from '../components/Socials'
 
 const Header = () => {
